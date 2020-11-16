@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Travel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <h1 class="title">Dream Travel</h1>
+            <div class="icons">
+                <span class="lnr lnr-user"></span>
+                <span class="lnr lnr-heart"></span>
+                <span class="lnr lnr-cog"></span>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><span class="lnr lnr-chevron-right"></span>about</li>
+                    <li><span class="lnr lnr-chevron-right"></span>survey</li>
+                    <li><span class="lnr lnr-chevron-right"></span>contact</li>
+                </ul>
+            </div>
+            <div class="account">
+                <button class="account-button">authorization</button>
+            </div>
+            <div class="copy">
+                <span class="copy-title">(c) Dream Travel</span>
+                <span class="copy-title">2020</span>
+            </div>
+        </div>
+        <div class="right">
+            <form class="survey-form">
+                <label for="name">
+                    <input type="text" class="input" placeholder="your name" autocomplete="off" required>
+                </label>
+                <label for="email">
+                    <input type="email" class="input" placeholder="your email" autocomplete="off" required>
+                </label>
+                <label for="number">
+                    <input type="number" class="input" placeholder="age" min="18" max="99">
+                </label>
+                <span class="dropdown-title">Destination</span>
+                <select class="select-input">
+                    <option>SELECT</option>
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>North / South America</option>
+                    <option>Africa</option>
+                    <option>Australia / Oceania</option>
+                </select>
+                <fieldset>
+                    <legend class="legend-title">gender</legend>
+                    <label class="container-radio">Female
+                        <input type="radio" name="gender">
+                        <span class="custom-radio"></span>
+                    </label>
+                    <label class="container-radio">Male
+                        <input type="radio" name="gender">
+                        <span class="custom-radio"></span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="legend-title">travel preferences</legend>
+                    <label class="container">Car
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="container">Train
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="container">Plane
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="container">Ship
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="container">Other
+                        <input type="checkbox" checked>
+                        <span class="custom-checkbox"></span>
+                    </label>
+                </fieldset>
+                <textarea placeholder="leave your comment"></textarea>
+                <button class="submit">submit</button>
+                <button class="reset">reset</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

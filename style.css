@@ -1,0 +1,339 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 670px;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+}
+
+.left, .right {
+    margin-top: 70px;
+    height: 700px;
+}
+
+.left {
+    background-color: black;
+}
+
+.right {
+    background: linear-gradient(45deg, #feb5fd, #7ddfef, #7ff4eb, #dff7c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Helvetica Neue';
+    font-size: 50pt;
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    padding: 50px 10px 40px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.icons {
+    color: white;
+    text-align: center;
+}
+
+.lnr {
+    padding: 0px 10px;
+    font-size: 14pt;
+    display: inline-block;
+    transition: .2s ease-out;
+}
+
+.lnr:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-transform: uppercase;
+    font-size: 10pt;
+    margin: 10px 0px;
+    display: inline;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.9;
+}
+
+.lnr-chevron-right {
+    padding: 0px 5px;
+    font-size: 8pt;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.account-button {
+    width: 200px;
+    padding: 10px;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    margin: 2px 0px;
+    border: 1px solid white;
+}
+
+.account-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 10px 10px 10px;
+    color: white;
+}
+
+.copy-title {
+    text-transform: uppercase;
+    font-size: 10pt;
+    margin: 2px 0px;
+}
+
+.survey-form {
+    padding: 0px 30px;
+}
+
+.input, .select-input {
+    width: 300px;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    padding: 15px;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color .2s ease-out;
+}
+
+.input:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.select-input:focus {
+    outline: none;
+}
+
+.dropdown-title {
+    display: block;
+    margin: 20px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.legend-title {
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    color: black;
+    transition: .2s ease-out;
+}
+
+:focus::placeholder {
+    color: white;
+}
+
+fieldset, textarea {
+    width: 300px;
+    border: 1px solid white;
+    padding: 10px 10px 15px 15px;
+    margin: 10px 0px 15px 0px;
+    display: block;
+}
+
+textarea {
+    border-bottom: 2px solid black;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* container radio */
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* hide default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* create a custom radio button */
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: .2s ease-out;
+}
+
+/* on mouseover */
+.container-radio:hover input ~ .custom-radio {
+    background-color: black;
+}
+
+/* checked checkbox bg color*/
+.container-radio input:checked ~ .custom-radio {
+    background-color: black;
+}
+
+/* create the checkmark/indicator (hidden when not checked) */
+.custom-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .custom-radio:after {
+    display: block;
+}
+
+/* style the indicator (dot/circle) */
+.container-radio .custom-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+/* hide default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* create a custom checkbox */
+.custom-checkbox {
+    position: absolute;
+    top: 0x;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    transition: .2s ease-out;
+}
+
+/* on mouseover */
+    .container:hover input ~ .custom-checkbox {
+    background-color: black;
+}
+
+/* checked checkbox bg color*/
+.container input:checked ~ .custom-checkbox {
+    background-color: black;
+}
+
+/* create the checkmark/indicator (hidden when not checked) */
+.custom-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* show the checkmark when checked */
+.container input:checked ~ .custom-checkbox:after {
+    display: block;
+}
+
+/* style the checkmark/indicator */
+    .container .custom-checkbox:after {
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    background: white;
+}
+
+.submit, .reset {
+    padding: 10px 30px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 5px 0px;
+}
+
+.submit {
+    background-color: black;
+}
+
+.reset {
+    background: linear-gradient(45deg, #fd483c, #fa0f32);
+    /* background-color: #fa0f32; */
+}
+
+.submit:hover, .reset:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
