@@ -10,6 +10,7 @@ html, body {
 
 body {
     background-color: white;
+    position: relative;
 }
 
 main {
@@ -20,6 +21,12 @@ main {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
+}
+
+.template-img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .left, .right {
@@ -330,7 +337,6 @@ textarea:focus {
 
 .reset {
     background: linear-gradient(45deg, #fd483c, #fa0f32);
-    /* background-color: #fa0f32; */
 }
 
 .submit:hover, .reset:hover {
